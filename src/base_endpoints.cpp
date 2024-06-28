@@ -23,6 +23,16 @@
 #include "../utils/logger.h"
 
 
+nlohmann::json Response::to_json() const {
+    return nlohmann::json{{"status", status_code}, {"message", message}};
+}
+
+
+std::string Response::to_string() const {
+    return to_json().dump();
+}
+
+
 nlohmann::json get_teapot() {
     // Create a JSON object
     nlohmann::json response;
@@ -33,6 +43,6 @@ nlohmann::json get_teapot() {
 
     // add log message
     auto logger = get_logger();
-    logger->info("Returning a teapot JSON object");
+    logger->info("Returning a teapot JSON object, status code: 418, Someone requested a teapot!");
     return response;
 }
