@@ -1,42 +1,40 @@
-Commercial Standard License
-------------------------------
+## Commercial Standard License
 
-Preamble/Intro
-  This software license may be freely used in unmodified form (with exceptions).
-  A work may only be copyrighted under this license in its unmodified form, or
-  with some subsections removed or swapped out. Details todo.
+### Preamble/Intro
+This software license may be freely used in unmodified form (with exceptions). A work may only be copyrighted under this license in its unmodified form, or with some subsections removed or swapped out. Details todo.
 
-Overview
-  These are the changes made to this specific license:
-  Copyright Owner: Nikhil Raj
-  Product Name: Neko Nik C++ API
-  Imprint: https://www.nekonik.com/impressum
-  License Modifications
-    Source code is NOT provided.
-    Warranty is NOT given.
-    You are allowed to have this software installed on 3 machine(s) at once.
-    Commercial or educational use is NOT allowed.
+### Overview
+These are the changes made to this specific license:
+- **Copyright Owner**: Nikhil Raj (Neko Nik) <[admin@nekonik.com](mailto:admin@nekonik.com)>
+- **Product Name**: Neko Nik C++ API
+- **Imprint**: [https://www.nekonik.com/impressum](https://www.nekonik.com/impressum)
+- **License**: Commercial Standard License
 
-Definitions
-  "Product", or "software" refers to the work that is copyrighted under
-  this license.
+#### License Modifications
+- Source code is NOT provided.
+- Warranty is NOT given.
+- You are allowed to have this software installed on 3 machine(s) at once.
+- Commercial or educational use is NOT allowed.
 
-  "We", or "us" refer to the copyright owner of this product. That owner is
-  Nikhil Raj.
+### Definitions
+- **"Product"**, or **"software"** refers to the work that is copyrighted under this license.
+- **"We"**, or **"us"** refer to the copyright owner of this product. That owner is Nikhil Raj.
+- **"You"** refers to the licensee of this product.
 
-  "You" refers to the licensee of this product.
+### License, Not Purchase
+By purchasing this license, you are allowed to use this product, but we retain the copyright to the software.
 
-License, not purchase
-  By purchasing this license, you are allowed to use this product, but we retain
-  the copyright to the software.
+### Redistribution
+You may not redistribute or resell the software.
 
-Redistribution
-  You may not redistribute or resell the software.
+### Warranty
+This product does NOT come with any warranty, express or implied, notwithstanding legislation to the contrary.
 
-Warranty
-  This product does NOT come with any warranty, express or implied,
-  notwithstanding legislation to the contrary.
+### Source Code
+This software does NOT provide the source code, and it is NOT legal to attempt to acquire it, whether by reverse engineering or otherwise.
 
-Source Code
-  This software does NOT provide the source code, and it is NOT legal to attempt
-  to aquire it, whether by reverse engineering or otherwise.
+### Installation
+You are allowed to have this software installed on 3 machine(s) at once.
+
+### Attribution
+You are required to give attribution to the copyright owner, Nikhil Raj, when using this software.
