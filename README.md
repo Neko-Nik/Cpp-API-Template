@@ -52,4 +52,4 @@ For more information, visit my [imprint](https://www.nekonik.com/impressum) or c
 
 ---
 
-Copyright © Neko Nik. All Rights Reserved.
+Copyright © [Neko Nik](https://www.nekonik.com). All Rights Reserved.
