@@ -37,3 +37,6 @@ cmake-build-debug
 
 #macos
 .DS_Store
+
+# Other files
+.vscode
