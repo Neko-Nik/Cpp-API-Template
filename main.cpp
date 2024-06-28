@@ -22,6 +22,7 @@
 #include "crow.h"
 #include "json.hpp"
 #include "utils/base_endpoints.h"
+#include "utils/logger.h"
 
 
 const char* API_KEY = "1234567890";
@@ -33,6 +34,8 @@ int main() {
 
     // Hide the console window and build for production
     // app.loglevel(crow::LogLevel::Warning);
+    auto logger = get_logger();
+    logger->info("Starting the server");
 
     // GET - /teapot - Return a Author JSON object
     CROW_ROUTE(app, "/teapot").methods("GET"_method)([]() {
@@ -59,7 +62,7 @@ int main() {
         CROW_LOG_INFO << "Received a POST request with JSON" << json.dump();
 
         // Return the JSON response
-        return crow::response(501, response.to_json());
+        return crow::response(501, response.to_string());
     });
 
     auto _a = app.port(8086).multithreaded().run_async();

@@ -19,20 +19,14 @@
  */
 
 
-#include "../utils/base_endpoints.h"
 #include "../utils/logger.h"
 
-
-nlohmann::json get_teapot() {
-    // Create a JSON object
-    nlohmann::json response;
-    response["message"] = "I'm a teapot!";
-    response["author"] = "Neko Nik";
-    response["website"] = "https://NekoNik.com";
-    response["status"] = 418;
-
-    // add log message
-    auto logger = get_logger();
-    logger->info("Returning a teapot JSON object");
-    return response;
+std::shared_ptr<spdlog::logger> get_logger() {
+    static std::shared_ptr<spdlog::logger> logger = nullptr;
+    if (!logger) {
+        auto max_size = 1048576 * 500;  // 500 MB
+        auto max_files = 3;
+        logger = spdlog::rotating_logger_mt("NekoNikCppAPI", "logs/NekoNikCppAPI.log", max_size, max_files);
+    }
+    return logger;
 }

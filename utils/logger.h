@@ -19,20 +19,13 @@
  */
 
 
-#include "../utils/base_endpoints.h"
-#include "../utils/logger.h"
+#pragma once
+
+#include "spdlog/spdlog.h"
+#include "spdlog/sinks/rotating_file_sink.h"
+#include "spdlog/sinks/daily_file_sink.h"
+#include <memory>
 
 
-nlohmann::json get_teapot() {
-    // Create a JSON object
-    nlohmann::json response;
-    response["message"] = "I'm a teapot!";
-    response["author"] = "Neko Nik";
-    response["website"] = "https://NekoNik.com";
-    response["status"] = 418;
-
-    // add log message
-    auto logger = get_logger();
-    logger->info("Returning a teapot JSON object");
-    return response;
-}
+// Function to get the logger instance
+std::shared_ptr<spdlog::logger> get_logger();

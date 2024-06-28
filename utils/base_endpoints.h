@@ -32,6 +32,10 @@ struct Response {
     nlohmann::json to_json() const {
         return nlohmann::json{{"status", status_code}, {"message", message}};
     }
+
+    std::string to_string() const {
+        return to_json().dump();
+    }
 };
 
 // Return a teapot JSON object
