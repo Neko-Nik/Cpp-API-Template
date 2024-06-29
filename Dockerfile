@@ -7,6 +7,11 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
+    g++ \
+    python3-dev \
+    autotools-dev \
+    libicu-dev \
+    libbz2-dev \
     cmake \
     clang \
     libcurl4-openssl-dev \
