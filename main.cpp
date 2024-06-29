@@ -20,7 +20,6 @@
 
 
 #include "crow.h"
-// #include "json.hpp"
 #include "utils/logger.h"
 #include "utils/base_endpoints.h"
 #include "utils/implimentation_testing.h"
@@ -46,7 +45,7 @@ int main() {
         if (!check_api_key(req.get_header_value("X-API-KEY"))) {
             return crow::response(401, "{\"message\": \"Unauthorized\", \"status\": 401}");
         }
-        
+
         // TODO: Implement the POST request validations
         // if (!post_req_validations(req)) {
         //     return crow::response(400, "{\"message\": \"Bad Request, Invalid JSON\", \"status\": 400}");
