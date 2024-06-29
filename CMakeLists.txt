@@ -18,6 +18,7 @@ set(SOURCES
     main.cpp
     src/base_endpoints.cpp
     src/logger.cpp
+    src/implimentation_testing.cpp
 )
 
 # Target executable

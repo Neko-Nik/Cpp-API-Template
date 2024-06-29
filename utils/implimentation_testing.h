@@ -19,26 +19,12 @@
  */
 
 
-#ifndef BASE_ENDPOINTS_H
-#define BASE_ENDPOINTS_H
+#ifndef IMPLIMENTATION_TESTING_H
+#define IMPLIMENTATION_TESTING_H
 
 #include "json.hpp"
 
-extern const char* API_KEY;
 
-// Response model message and status code
-struct Response {
-    int status_code;
-    std::string message;
+nlohmann::json pre_implimentations(const nlohmann::json &request_body);
 
-    nlohmann::json to_json() const;
-    std::string to_string() const;
-};
-
-// Check API Key
-bool check_api_key(const std::string &api_key);
-
-// Return a teapot JSON object
-nlohmann::json get_teapot();
-
-#endif // BASE_ENDPOINTS_H
+#endif // IMPLIMENTATION_TESTING_H
