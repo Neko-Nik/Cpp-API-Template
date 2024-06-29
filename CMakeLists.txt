@@ -29,7 +29,7 @@ set_target_properties(main_api PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOU
 # Include directories
 target_include_directories(main_api PRIVATE ${PROJECT_SOURCE_DIR}/include)
 
-# Optional: Find and link against Boost if needed
+# Find and link against Boost if needed
 find_package(Boost REQUIRED COMPONENTS system)
 if(Boost_FOUND)
     target_link_libraries(main_api PRIVATE Boost::system)
